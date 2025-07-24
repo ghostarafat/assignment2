@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Flower Shop</title>
     <!-- Font awesome -->
     <link
@@ -16,22 +17,27 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <div class="logo"><img src="assets/logo.png" alt="" /></div>
-        <ul>
-          <li><a class="dark-2 hide" href=" ">Home</a></li>
-          <li><a class="dark-1 hide" href=" ">Shop</a></li>
-          <li><a class="dark-1 hide" href=" ">About Us</a></li>
-          <li>
-            <a class="dark-2" href=" "
-              ><i class="fa-solid fa-cart-shopping"></i> Cart ($56)</a
-            >
-          </li>
-        </ul>
+        <div class="nav-items">
+          <ul class="nav-links items-center">
+            <li><a class="dark-2 hide" href=" ">Home</a></li>
+            <li><a class="dark-1 hide" href=" ">Shop</a></li>
+            <li><a class="dark-1 hide" href=" ">About Us</a></li>
+            <li>
+              <div class="cart">
+                <span class="cart-icon"
+                  ><i class="fa-solid fa-cart-shopping"></i
+                ></span>
+                <span class="cart-text">Cart($56)</span>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
-      <div class="banner">
-        <div class="banner-content">
-          <h1 class="banner-title">
+      <div class="hero">
+        <div class="hero-text">
+          <h1 class="hero-title">
             ALWAYS <span class="highlight">FRESH FLOWERS</span>
           </h1>
           <p class="description dark-1">
@@ -41,12 +47,149 @@
           </p>
         </div>
         <div>
-          <img class="banner-img" src="assets/hero-flower.png" alt="hero-flower" />
+          <img
+            class="hero-img"
+            src="assets/hero-flower.png"
+            alt="hero-flower"
+          />
         </div>
       </div>
     </header>
+    <main>
+      <section class="max-w-7xl mx-auto px-4 py-10 text-center">
+        <!-- Section Title -->
+        <div class="mb-10">
+          <h2 class="text-5xl font-bold">
+            <span class="highlight">Our</span> <span>Plants</span>
+          </h2>
+          <p class="text-gray-600 mt-2 max-w-3xl mx-auto description dark-1">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From classic roses to exotic blooms, we offer a wide
+            variety of fresh.
+          </p>
+        </div>
 
-    <main></main>
+        <!-- Grid of 8 Cards -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-2">
+          <!-- Card 1 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm"
+            >
+              ADD TO CART
+            </button>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm"
+            >
+              ADD TO CART
+            </button>
+          </div>
+          <!-- Card 3 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm">
+              ADD TO CART
+            </button>
+          </div>
+          <!-- Card 4 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm">
+              ADD TO CART
+            </button>
+          </div>
+          <!-- Card 5 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm">
+              ADD TO CART
+            </button>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm">
+              ADD TO CART
+            </button>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm">
+              ADD TO CART
+            </button>
+          </div>
+          <!-- Card 8 -->
+          <div class="p-4 text-center flex flex-col items-center">
+            <img
+              src="assets/sample-flower-image.png"
+              alt="Lily Blossom"
+              class="w-full h-64 object-cover mb-4"
+            />
+            <p class="dark-2 font-medium text-xl">Lily Blossom</p>
+            <p class="dark-2 font-bold text-lg mb-4">20 USD</p>
+            <button
+              class="w-full bg-orange-600 hover:bg-orange-700 text-white font-medium py-2 text-sm">
+              ADD TO CART
+            </button>
+          </div>
+      </section>
+    </main>
 
     <footer></footer>
   </body>
