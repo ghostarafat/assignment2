@@ -75,9 +75,9 @@ nav a {
 .hero-title {
   font-size: 4.3rem;
 }
-.hero img {
+/* .hero img {
   width: 570px;
-}
+} */
 
 /* responsive */
 @media screen and (max-width: 768px) {
@@ -85,9 +85,9 @@ nav a {
     display: none;
     padding: 0%;
   }
-  nav {
+  /* nav {
     margin: 2rem 1rem;
-  }
+  } */
   .cart {
     display: flex;
     flex-direction: row;
@@ -97,21 +97,15 @@ nav a {
   
   .hero {
     flex-direction: column-reverse;
-    
-  
   }
   .hero-text {
     text-align: left;
     padding: 20px 0%;
+    width: 100%;
   }
-  .hero-img {
-    align-items: right;
-  }
+  
   .hero-title {
     font-size: 2.5rem;
   }
-  .hero-text,
-  .hero-img {
-    width: 100%;
-  }
+  
 }
