@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
 .noto-serif-font {
   font-family: "Noto Serif", serif;
   font-optical-sizing: auto;
@@ -13,14 +14,17 @@
 .dark-1 {
   color: #8987a1;
 }
+
 .dark-2 {
   color: #111111;
 }
+
 .highlight {
   color: #e95a08;
 }
+
 .description {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
 
 /* main styles */
@@ -36,22 +40,27 @@ nav {
   justify-content: space-between;
   padding: 20px 10%;
 }
+
 nav ul {
   display: flex;
   margin-left: 2rem;
 }
+
 ul .nav-links {
   display: flex;
   align-items: center;
 }
+
 nav li {
   list-style: none;
   margin-left: 2rem;
 }
+
 nav a {
   text-decoration: none;
   font-size: 1rem;
 }
+
 .cart {
   display: flex;
   align-items: center;
@@ -59,7 +68,7 @@ nav a {
 }
 
 .cart-icon {
-  font-size: 1rem;  
+  font-size: 1rem;
 }
 
 /* Hero styles */
@@ -69,12 +78,15 @@ nav a {
   align-items: center;
   padding: 50px 10%;
 }
+
 .hero-text {
   width: 50%;
 }
+
 .hero-title {
   font-size: 4.3rem;
 }
+
 /* .hero img {
   width: 570px;
 } */
@@ -85,6 +97,7 @@ nav a {
     display: none;
     padding: 0%;
   }
+
   /* nav {
     margin: 2rem 1rem;
   } */
@@ -94,18 +107,33 @@ nav a {
     justify-content: center;
     align-items: center;
   }
-  
+
   .hero {
     flex-direction: column-reverse;
+    padding: 0;
   }
+
+  .hero img {
+    width: 100%;
+    /*  এটা যোগ করো */
+    height: auto;
+    object-fit: cover;
+  }
+
   .hero-text {
     text-align: left;
     padding: 20px 0%;
     width: 100%;
+    padding: 5%;
   }
-  
-  .hero-title {
-    font-size: 2.5rem;
+
+  .mobile-title {
+    font-size: 1.9rem;
   }
-  
+
+  .mobile-p {
+    font-size: 0.875rem;
+  }
+
+
 }
